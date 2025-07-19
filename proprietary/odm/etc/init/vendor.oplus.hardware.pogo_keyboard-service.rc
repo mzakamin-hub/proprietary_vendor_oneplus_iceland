@@ -1,0 +1,9 @@
+service pogokey_board /odm/bin/hw/vendor.oplus.hardware.pogo_keyboard-service
+    class hal
+    user system
+    group system
+    interface aidl vendor.oplus.hardware.pogo_keyboard.IPogoKeyboard/default
+
+on post-fs-data
+    chmod 0666 /dev/ttyHS5
+    chmod 0666 /dev/ttyS1
