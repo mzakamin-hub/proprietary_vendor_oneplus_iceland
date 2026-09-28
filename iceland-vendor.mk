@@ -837,6 +837,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/iceland/proprietary/odm/etc/camera/selfbokehmodel.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/selfbokehmodel.bin \
     vendor/oneplus/iceland/proprietary/odm/etc/camera/settings_fdc.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc.txt \
     vendor/oneplus/iceland/proprietary/odm/etc/camera/settings_fdc_lite.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc_lite.txt \
+    vendor/oneplus/iceland/proprietary/odm/etc/camera/singleblur/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license \
     vendor/oneplus/iceland/proprietary/odm/etc/camera/singleblur/personseg.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/personseg.bin \
     vendor/oneplus/iceland/proprietary/odm/etc/camera/singleblur/preview_seg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/preview_seg.json \
     vendor/oneplus/iceland/proprietary/odm/etc/camera/sticker/M_SenseME_Action_5.2.12.model:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/M_SenseME_Action_5.2.12.model \
@@ -1416,6 +1417,7 @@ PRODUCT_PACKAGES += \
     libhwfenceclient \
     libhwliqinterface2 \
     libhwlispcffdump \
+    libiccprofile \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
@@ -1533,6 +1535,7 @@ PRODUCT_PACKAGES += \
     libAlgoInterface \
     libAlgoProcess \
     libAncFilter \
+    libAncHumanSegFigureFusion \
     libAncSegBaseSdk \
     libAncSegmentSdk \
     libBasicTonePhoto \
@@ -1564,6 +1567,7 @@ PRODUCT_PACKAGES += \
     libOPLUSMotionDetection \
     libOplusPDCore \
     libOpo_awb \
+    libPDParamParser \
     libQnnCpu \
     libQnnGpu \
     libQnnHtp \
@@ -1600,6 +1604,7 @@ PRODUCT_PACKAGES += \
     libaiseg \
     libalCFR \
     libalog \
+    libalogencrypt \
     libancbase_rt_fusion \
     libapsdngsdk \
     libapsexif \
