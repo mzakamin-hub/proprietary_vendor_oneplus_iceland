@@ -1,0 +1,4 @@
+#Tangsong.Liu@MULTIMEDIA.AudioDriver, 2025/10/20, Add for tfa98xx_v6 calibrate
+on boot
+    chown audioserver audio /dev/tfa98xx
+    chmod 0666 /dev/tfa98xx

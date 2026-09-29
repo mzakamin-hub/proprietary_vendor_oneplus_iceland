@@ -1,0 +1,18 @@
+on post-fs-data
+    wait /dev/block/by-name/nonmodemst1 5
+    wait /dev/block/by-name/nonmodemst2 5
+    start nvram
+
+service nvram /odm/bin/nvram_server
+    class core
+    user root
+    group root system
+    ioprio rt 4
+    seclabel u:r:nvram:s0
+
+service nvram_qmi /odm/bin/nvram_qmi
+    class core
+    user root
+    group root system
+    ioprio rt 4
+    seclabel u:r:nvram_qmi:s0
